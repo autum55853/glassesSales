@@ -297,7 +297,7 @@ li {
           right: 0;
           bottom: 15%; } }
     .footer .footer-bottom .footer-text p {
-      margin-left: 120px; }
+      margin-left: 60px; }
       @media (max-width: 768px) {
         .footer .footer-bottom .footer-text p {
           margin: 0;
@@ -405,7 +405,7 @@ li {
     text-align: left; }
 
 .content-product {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto; }
   @media (max-width: 768px) {
     .content-product {
