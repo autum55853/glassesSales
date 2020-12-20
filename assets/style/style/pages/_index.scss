@@ -1,0 +1,406 @@
+.banner {
+    max-width: 100%;
+    height: 800px;
+    background-color: black;
+    background-image: url("../images/banner.png");
+    background-position: center center;
+    background-size:cover;
+    @include pad(){
+        height: 500px;
+    }
+    @include iphone(){
+        height: 350px;
+    }
+}
+
+.title {
+    color: #650300;
+    font-size: $font-l;
+    position: relative;
+    left:50%;
+    top:50%;
+    @include pad(){
+        font-size: $font-m;
+        font-weight: bold;
+        left:50%;
+    }
+    @include iphone(){
+        font-size: 18px;
+        left:20%;
+        top:50%;
+    }
+}
+.container{
+    max-width: 100%;
+    background-color: $bc-secondary;
+}
+.content {
+    max-width: 100%;
+    color: $color-primary;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content-intro {
+    background-color: $bc-secondary;
+    h3{
+        color:$color-primary;
+        font-size: $font-l;
+        font-weight: bold;
+        @include pad(){
+            font-size:32px;
+            padding: 30px;
+        }
+        @include iphone(){
+            font-size: $font-m;
+            padding: 10px;
+        }
+    }
+
+    h6{
+        color: $color-primary;
+        font-size: $font-m;
+        text-align: center;
+    }
+    ul{
+        max-width: 75%;
+        margin: 0 auto;
+        @include pad(){
+            font-size: 20px;
+            flex-wrap:wrap;
+            padding-left: 30px;
+        }
+        @include iphone(){
+            font-size: $font-m;
+            padding-left: 10px;
+        }
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+    .intro-title{
+        width: 200px;
+        margin:1.5em;
+        font-size: $font-m;
+        text-align: center;
+    }
+    .description {
+        color: black;
+        font-size: $font-s;
+        text-align: left;
+    }
+    
+}
+
+.content-product {
+    max-width: 90%;
+    margin: 0 auto;
+    @include pad(){
+        max-width: 90%;
+    }
+    h3{
+        color:$color-primary;
+        font-size: $font-l;
+        font-weight: bold;
+        @include pad(){
+            font-size:32px;
+            padding: 30px;
+        }
+        @include iphone(){
+            font-size: $font-m;
+            padding: 20px;
+        }
+    }   
+    img {
+        height: 325px;
+        @include pad(){
+            height: 168px;
+        }
+        @include iphone(){
+            max-width: 100%;
+            padding:0;
+        }
+    }
+    p {
+        font-size: $font-l;
+        color: $color-red;
+        @include pad(){
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+        @include iphone(){
+            color:$color-links;
+            margin: 0 auto;
+        }
+       
+    }
+    .product-sunglasses{
+        @include pad(){
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            p{
+                @include pad(){
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    .products-text{
+        @include iphone(){
+            position: absolute;
+            top:5%;
+            left:18%;
+
+        }
+        .classical-icons{
+            width: 48px;
+            @include pad(){
+                width: 32px;
+            }    
+            @include iphone(){
+                display: none;
+            }
+        }
+    }
+
+    .icon-white{
+        display: none;
+        @include iphone(){
+            display: inline-block;
+            width: 32px;
+        } 
+    }
+    .products{
+        margin: 16px;
+        display: flex;
+        align-items: center;
+        @include iphone(){
+            position: relative;
+        }
+    }
+
+}
+
+
+.content-design_product {
+    height: 742px;
+    background-image: url('../images/bg.png') ;
+    @include pad(){
+        height: 437px;
+        background-size:cover;
+    }
+    @include iphone(){
+        height:700px;
+        background-size:cover;
+    }
+    h3 {
+        color: white;
+        font-size: $font-l;
+        font-weight: bold;
+        @include pad(){
+            font-size:32px;
+            padding: 30px;
+        }
+        @include iphone(){
+            font-size: $font-m;
+            padding: 5px;
+        }
+    }
+    a {
+        color: $color-primary;
+        font-size: $font-xxl;
+        position: relative;
+        top:35%;     
+        @include pad(){
+            font-size: $font-l;
+        }
+    }
+    .glasses-series{
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @include iphone(){
+            flex-wrap: wrap;
+        }
+    }
+    .series-double {
+        width: 540px;
+        height: 472px;
+        margin: 20px;
+        background-image: url('../images/product-8.png');
+        background-size:cover;
+        opacity: 0.8;
+        @include pad(){
+            height:280px;
+        }
+        @include iphone(){
+            height:284px;
+        }
+    }
+    .series-youth {
+        width: 540px;
+        height: 472px;
+        margin: 20px;
+        background-image: url('../images/product-9.png');
+        background-size:cover;
+        opacity: 0.8;
+        @include pad(){
+            height:280px;
+
+        }
+        @include iphone(){
+            height:284px;
+        }
+    }
+    .series-double:hover,.series-youth:hover{
+        opacity: 1;
+    }
+}
+
+.content-customer {
+    margin: 0 auto;
+    max-width: 80%;
+    @include pad(){
+        max-width: 100%;
+    }
+    h3 {
+        color: $color-primary;
+        font-size: $font-l;
+        font-weight: bold;
+        @include pad(){
+            font-size:32px;
+            padding: 30px;
+        }
+        @include iphone(){
+            font-size: $font-m;
+            padding: 5px;
+        }
+    }
+    p {
+        font-size: $font-s;
+        color: black;
+    }
+    h6 {
+        font-size: $font-s;
+        color: black;
+        padding: 5px;
+    }
+    img{
+        display: block;
+        width: 255px;
+        @include pad(){
+            width: 300px;
+        }
+        
+    }
+  
+    .comments {
+        padding:16px;
+        @include pad(){
+            width: 330px;
+        }
+        
+    }
+    .customer {
+        display: flex;
+        justify-content: space-around;
+        @include pad(){
+            flex-wrap:wrap;
+        }
+    }
+    .comments-updated{
+        font-size: $font-s;
+        color:#707070;
+    }
+    
+}
+
+.contact {
+    background-color: $bc-secondary;
+    color: $color-black;
+    h3{
+        color:$color-primary;
+        font-size: $font-l;
+        font-weight: bold;
+        text-align: center;
+        @include pad(){
+            font-size:32px;
+            padding: 30px;
+        }
+        @include iphone(){
+            font-size: $font-m;
+            padding: 5px;
+        }
+    }
+    p {
+        font-size: $font-s;
+        @include pad(){
+            font-weight: bold;
+        }
+
+    }
+    form {
+        max-width: 60%;
+        margin: 0 auto;
+        @include pad(){
+            max-width: 65%;
+        }
+        @include iphone(){
+            max-width: 100%;
+        }
+    }
+    label, input{
+        padding:5px;
+        @include pad(){
+            padding: 10px;
+        }
+        @include iphone(){
+            padding: 5px;
+        }
+    }
+    textarea{
+        resize: none;
+        height: 136px;
+        @include pad(){
+            height: 100px;
+        }
+        @include iphone(){
+            height: 80px;
+        }
+    }
+    .check {
+        padding: 5px;
+        @include pad(){
+            font-size: $font-xs;
+        }
+        @include iphone(){
+            font-size: $font-xxs;
+            padding: 5px;
+        }
+        label{
+            @include iphone(){
+                display: inline;
+            }
+        }
+    }
+    .submit {
+        background-color:#650300;
+        &:hover {
+            background-color:$bc-primary;
+        }
+        color:white;
+        font-size: $font-m;
+        margin:auto 150px;
+        @include pad() {
+            font-size: $font-s;
+        }
+        @include iphone(){
+            font-size: $font-xxs;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.banner-faq{
+    height: 304px;
+    background: url('../images/qa.png');
+    background-position: center center;
+    background-size:cover;
+    @include pad(){
+        height: 220px;
+        background-position-x:25%;
+    }
+    @include iphone(){
+        height: 150px;
+        background-position-x:30%;
+    }
+    .title-faq {
+        max-width: 60%;
+        margin: 0 auto;
+        color:$color-black;
+        position: relative;
+        top:70%;
+        @include pad(){
+            max-width:90%;
+        }
+        @include iphone(){
+    
+        }
+    }
+    h3{
+        font-size: 48px;
+        @include pad(){
+
+                }
+        @include iphone(){
+            font-size:$font-m;
+        }
+    }
+    span{
+        padding: 5px;
+        color:$color-primary;
+        font-size: $font-xl;  
+        @include iphone(){
+            font-size: $font-m;
+        } 
+    }
+}
+.content-asking{
+    max-width: 70%;
+    margin: 0 auto;
+    color:$color-black;
+    margin-bottom: 200px;
+    @include pad(){
+        max-width:90%;
+    }
+ 
+    .question{
+        margin-bottom: 40px;
+        @include iphone(){
+            margin-bottom: 30px;
+        }  
+    }
+
+    h4{
+        margin: 50px 0;
+        font-size: 32px;
+    }
+    h5{
+        margin-bottom: 16px;
+        font-size: $font-m;
+        @include iphone(){
+            font-size: $font-s;
+        } 
+    }
+    p{
+        padding-left: 6.5em;
+        letter-spacing: 3px;
+        font-size: $font-s;
+        @include pad(){
+            padding-left: 2em;
+        }
+        @include iphone(){
+            font-size: 14px;
+            padding-left: 0.5em;
+        } 
+    }
+}

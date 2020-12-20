@@ -1,0 +1,177 @@
+.header {
+    background-color: $bc-primary;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include iphone(){
+        margin: 0 auto;
+        display: inline-block;
+    }
+    a{
+        padding:5px;
+        @include iphone(){
+            text-align: center;
+        }
+    }
+    img{
+        @include iphone(){
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 5px 8px;
+        }
+    }
+}
+
+.header-logo {
+    width: 80px;
+    margin-left: 50px;
+}
+
+.nav {
+    display: flex;
+    padding: 40px 0;
+    @include iphone(){
+        padding: 5px 0;
+    }
+    a {
+        text-decoration: none;
+        @include iphone(){
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid white;
+        }
+    }
+    }
+    li {
+        margin-right: 1em;
+        font-size: $font-m;
+        list-style: none;
+        color: white;
+        @include iphone(){
+            margin: 0 auto;
+            padding: 5px 0;
+        }
+        
+    }
+
+.footer {
+    background-color: $bc-primary;
+    .footer-top{
+        max-width: 65%;
+        margin: 0 auto;
+        @include pad(){
+            max-width: 85%;
+            font-size: $font-s;
+        }
+    }
+    .link-pages li, .link-pages a{
+        margin: 10px 0;
+        @include iphone(){
+            display: none;
+            justify-content: start;
+        }
+    }
+    .socialmedia{
+        @include iphone(){
+            position: absolute;
+            right: 0;
+        }
+    }
+    li{
+        font-size: $font-m;
+        color:$color-links;
+        padding: 15px;
+        @include pad(){
+        font-size: $font-s;
+        margin-top: 1.5em;
+        padding: 5px;
+        } 
+    }
+    a{
+        font-size: $font-l;
+        @include pad(){
+            font-size: $font-m;
+            padding: 5px;
+        }
+        @include iphone(){
+            font-size: $font-s; 
+            display: inline-block; 
+        }
+    }
+       
+    .footer-links {
+        @include iphone(){
+            width: 300px;
+        } 
+        img{
+            width: 48px;
+            color:white;
+            @include pad(){
+                width: 40px;
+            }
+            @include iphone(){
+                width: 24px;
+
+            }
+        }
+    }
+    .footer-bottom{
+        border-top:  2px solid white;
+        padding:10px 0;
+        position: relative;
+        margin-top: 20px;
+        @include pad(){
+            padding: 5px 0;
+        }
+        @include iphone(){
+            flex-wrap: wrap;
+        }
+        a{
+            font-size: $font-s;
+            @include iphone(){
+                padding: 0;
+            }
+        }
+        .footer-logo{
+            width: 80px;
+            @include pad(){
+                display: none;
+            }
+            @include iphone(){
+                display: block;
+                position: absolute;
+                right:0;
+                bottom: 15%;
+            }
+        }
+        .footer-text{
+            p{
+                margin-left: 60px;
+                @include pad(){
+                    margin:0;
+                    justify-content: baseline;
+                }
+                @include iphone(){
+                    margin: 0;
+                    padding: 10px 0;
+                }
+            }
+            a{
+                font-size: $font-xs;
+            }
+        }
+        .service-right{
+            @include iphone(){
+                display: block !important;
+            }
+            li{
+                @include iphone(){
+                    margin: 0;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}

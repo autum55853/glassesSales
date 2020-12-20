@@ -1,0 +1,39 @@
+html, body{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 24px;
+    overflow-x:hidden;
+}
+
+
+a{
+    display: block;
+    text-decoration: none !important;
+}
+
+
+//padding
+.pd_10{
+    padding: 10px;
+}
+.pd_30{
+    padding: 30px;
+}
+.pd_50{
+    padding:50px;
+}
+.pd-left_10{
+    padding-left: 10px;
+}
+.pd-right_10{
+    padding-right: 10px;
+}
+
+
+//margin
+.mb_10{
+    margin-bottom: 10px;
+}
+.mb_30{
+    margin-bottom: 30px;
+}
