@@ -382,6 +382,7 @@
             padding: 5px;
         }
         label{
+            display: inline;
             @include iphone(){
                 display: inline;
             }

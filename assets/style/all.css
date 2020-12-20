@@ -665,9 +665,11 @@ li {
       .contact .check {
         font-size: 8px;
         padding: 5px; } }
-    @media (max-width: 376px) {
-      .contact .check label {
-        display: inline; } }
+    .contact .check label {
+      display: inline; }
+      @media (max-width: 376px) {
+        .contact .check label {
+          display: inline; } }
   .contact .submit {
     background-color: #650300;
     color: white;
